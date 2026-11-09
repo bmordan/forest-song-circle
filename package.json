@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && aws s3 sync dist/ s3://uk.co.forestsongcircle/ --delete && aws cloudfront create-invalidation --distribution-id E1LR0CL6AO1LOL --paths \"/*\""
   },
   "devDependencies": {
     "typescript": "~5.7.2",
