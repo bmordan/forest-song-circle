@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Forest Song Circle</title>
+    <meta
+      name="description"
+      content="A restorative song circle in the New Forest — songs, prayer, and cacao."
+    />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <header class="site-nav">
+      <a class="site-nav__brand" href="/">🛖</a>
+      <nav aria-label="Primary">
+        <ul class="site-nav__links">
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/book.html">How to book</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="scene" id="scene" aria-label="Song circle scene">
+        <div class="scene__stage">
+          <canvas
+            id="scene-canvas"
+            class="scene__canvas"
+            width="1920"
+            height="1080"
+            aria-hidden="true"
+          ></canvas>
+        </div>
+
+        <h1 class="scene__title">New Forest<br />Song Circle</h1>
+
+        <div class="scene__scroll" id="scene-scroll" aria-hidden="true">
+          <span class="scene__scroll-label">Scroll</span>
+          <span class="scene__scroll-chevron"></span>
+        </div>
+
+        <div class="scene__ctas" id="scene-ctas">
+          <a class="scene__cta scene__cta--primary" href="/about.html"
+            >About the song circle</a
+          >
+          <a class="scene__cta" href="/book.html">How to book</a>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
